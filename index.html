@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3個制限の3目並べ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>3個制限の3目並べ</h1>
+  <div id="info">
+    <div id="status">ターン: <strong id="turnText">X</strong></div>
+    <div id="message" style="margin-top:6px;color:#b00"></div>
+  </div>
+
+  <div id="board" aria-label="tic-tac-toe board"></div>
+
+  <div class="controls">
+    <button id="resetBtn">リセット</button>
+    <small>（ローカル2人プレイ）</small>
+  </div>
+
+  <div id="queues">
+    <div class="queue">
+      <div><strong>X の石（古い順→新しい順）</strong></div>
+      <div id="xQueueDisplay">—</div>
+    </div>
+    <div class="queue">
+      <div><strong>O の石（古い順→新しい順）</strong></div>
+      <div id="oQueueDisplay">—</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
